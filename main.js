@@ -22,7 +22,7 @@ var test;
 var result = []
 
 for (var i = 0; i < 4; i++) {
-    test = Math.floor(Math.random() * 5);
+    test = Math.floor(Math.random() * 6);
     test += 1;
     result.push(test);
 } 
