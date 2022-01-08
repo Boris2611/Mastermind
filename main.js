@@ -14,6 +14,10 @@ var rowF = [];
 
 var row;
 
+var clicksound = new Audio("Sounds/sound.wav");
+var answersound = new Audio("Sounds/answer.wav");
+var winsound = new Audio("Sounds/win.wav");
+
 
 var played = 0;
 
@@ -70,6 +74,8 @@ function purple() {
 
 // LOGIC
 function logic() {
+    clicksound.play();
+
     if (played < 4) {
         rowA.push(colorValue);
         var id = "a" + parseInt(played + 1);
@@ -125,6 +131,7 @@ function check() {
                 correct += 1;
                 if (correct == 4) {
                     final();
+                    winsound.play();
                 }
             }
 
@@ -143,6 +150,7 @@ function check() {
         } 
 
         if (played == 4) {
+            answersound.play();
             for (var n = 0; n < correctAndIncorrect; n++) {
                 var id = "a" + parseInt(n + 1) + parseInt(n + 1);
                 document.getElementById(id).style.backgroundColor = "#666";
@@ -155,18 +163,21 @@ function check() {
         }
     
         if (played == 8) {
+            answersound.play();
             for (var n = 0; n < correctAndIncorrect; n++) {
                 var id = "b" + parseInt(n + 1) + parseInt(n + 1);
                 document.getElementById(id).style.backgroundColor = "#666";
             }
     
             for (var n = 0; n < correct; n++) {
+                answersound.play();
                 var id = "b" + parseInt(n + 1) + parseInt(n + 1);
                 document.getElementById(id).style.backgroundColor = "black";
             }
         }
     
         if (played == 12) {
+            answersound.play();
             for (var n = 0; n < correctAndIncorrect; n++) {
                 var id = "c" + parseInt(n + 1) + parseInt(n + 1);
                 document.getElementById(id).style.backgroundColor = "#666";
@@ -179,6 +190,7 @@ function check() {
         }
     
         if (played == 16) {
+            answersound.play();
             for (var n = 0; n < correctAndIncorrect; n++) {
                 var id = "d" + parseInt(n + 1) + parseInt(n + 1);
                 document.getElementById(id).style.backgroundColor = "#666";
@@ -191,6 +203,7 @@ function check() {
         }
     
         if (played == 20) {
+            answersound.play();
             for (var n = 0; n < correctAndIncorrect; n++) {
                 var id = "e" + parseInt(n + 1) + parseInt(n + 1);
                 document.getElementById(id).style.backgroundColor = "#666";
@@ -203,6 +216,7 @@ function check() {
         }
     
         if (played == 24) {
+            answersound.play();
             for (var n = 0; n < correctAndIncorrect; n++) {
                 var id = "f" + parseInt(n + 1) + parseInt(n + 1);
                 document.getElementById(id).style.backgroundColor = "#666";

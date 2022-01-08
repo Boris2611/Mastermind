@@ -1,5 +1,5 @@
 body {
-    background-color: #999;
+    background-image: url("bg.jpg");
 }
 
 .dugme {
@@ -10,6 +10,7 @@ body {
     border-radius: 30px;
     cursor: pointer;
     border: 2px solid white;
+    box-shadow: 0px 0px 5px 5px #444;
 }
 
 #a {
@@ -39,12 +40,13 @@ body {
 
 
 .tabla {
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 50px;
-    background-color: rgba(245, 222, 179, 0.534);
+    background-color: rgba(78, 78, 214, 0.274);
     width: 550px;
     border-radius: 20px;
-    border: 1px white solid;
+    border: 2px white solid;
+    box-shadow: 0px 0px 5px 5px #444;
 }
 
 
@@ -58,7 +60,9 @@ body {
     background-color: gainsboro;
 }
 
-
+#a1 {
+    margin-top: 20px;
+}
 
 #a11, #a1, #b1, #b11, #c11, #c1, #c1, #c11,
 #d1, #d11, #e1, #e11, #f1, #f11 {
@@ -77,13 +81,27 @@ button {
     margin: 20px;
     padding: 10px;
     float: right;
+    font-size: 15px;
+    color: white;
+    background-color: green;
+    border-radius: 12px;
+    border: 2px white solid;
+    box-shadow: 0px 0px 5px 5px #444;
 }
 
 #an1, #an2, #an3, #an4 {
     margin-left: 3px;
     margin-right: 3px;
+    margin-bottom: 20px;
 }
 
+.dugmici {
+    background-color: rgba(0, 0, 255, 0.226);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px 5px #444;
+}
 
 @media only screen and (max-width: 800px) {
     .empty {
