@@ -141,80 +141,80 @@ function check() {
                 correctAndIncorrect += 1;
             }
         } 
+
+        if (played == 4) {
+            for (var n = 0; n < correctAndIncorrect; n++) {
+                var id = "a" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "#666";
+            }
+    
+            for (var n = 0; n < correct; n++) {
+                var id = "a" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "black";
+            }
+        }
+    
+        if (played == 8) {
+            for (var n = 0; n < correctAndIncorrect; n++) {
+                var id = "b" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "#666";
+            }
+    
+            for (var n = 0; n < correct; n++) {
+                var id = "b" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "black";
+            }
+        }
+    
+        if (played == 12) {
+            for (var n = 0; n < correctAndIncorrect; n++) {
+                var id = "c" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "#666";
+            }
+    
+            for (var n = 0; n < correct; n++) {
+                var id = "c" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "black";
+            }
+        }
+    
+        if (played == 16) {
+            for (var n = 0; n < correctAndIncorrect; n++) {
+                var id = "d" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "#666";
+            }
+    
+            for (var n = 0; n < correct; n++) {
+                var id = "d" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "black";
+            }
+        }
+    
+        if (played == 20) {
+            for (var n = 0; n < correctAndIncorrect; n++) {
+                var id = "e" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "#666";
+            }
+    
+            for (var n = 0; n < correct; n++) {
+                var id = "e" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "black";
+            }
+        }
+    
+        if (played == 24) {
+            for (var n = 0; n < correctAndIncorrect; n++) {
+                var id = "f" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "#666";
+            }
+    
+            for (var n = 0; n < correct; n++) {
+                var id = "f" + parseInt(n + 1) + parseInt(n + 1);
+                document.getElementById(id).style.backgroundColor = "black";
+            }
+        }
     }
 
-
-    if (played == 4) {
-        for (var n = 0; n < correctAndIncorrect; n++) {
-            var id = "a" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#666";
-        }
-
-        for (var n = 0; n < correct; n++) {
-            var id = "a" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "black";
-        }
-    }
-
-    if (played == 8) {
-        for (var n = 0; n < correctAndIncorrect; n++) {
-            var id = "b" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#666";
-        }
-
-        for (var n = 0; n < correct; n++) {
-            var id = "b" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "black";
-        }
-    }
-
-    if (played == 12) {
-        for (var n = 0; n < correctAndIncorrect; n++) {
-            var id = "c" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#666";
-        }
-
-        for (var n = 0; n < correct; n++) {
-            var id = "c" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "black";
-        }
-    }
-
-    if (played == 16) {
-        for (var n = 0; n < correctAndIncorrect; n++) {
-            var id = "d" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#666";
-        }
-
-        for (var n = 0; n < correct; n++) {
-            var id = "d" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "black";
-        }
-    }
-
-    if (played == 20) {
-        for (var n = 0; n < correctAndIncorrect; n++) {
-            var id = "e" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#666";
-        }
-
-        for (var n = 0; n < correct; n++) {
-            var id = "e" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "black";
-        }
-    }
-
-    if (played == 24) {
-        for (var n = 0; n < correctAndIncorrect; n++) {
-            var id = "f" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#666";
-        }
-
-        for (var n = 0; n < correct; n++) {
-            var id = "f" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "black";
-        }
-    }
 
 
 
@@ -230,7 +230,141 @@ function win() {
 }
 
 function lose() {
-    alert("Out Of Moves")
+   
 }
 
+
+function returnMove() {
+    if (played < 4) {
+        played = 0;
+        document.getElementById("a1").style.backgroundColor = "gainsboro";
+        document.getElementById("a2").style.backgroundColor = "gainsboro";
+        document.getElementById("a3").style.backgroundColor = "gainsboro";
+        document.getElementById("a4").style.backgroundColor = "gainsboro";
+        rowA = [];
+    }
+
+    if (played < 8 && played > 4) {
+        played = 4;
+        document.getElementById("b1").style.backgroundColor = "gainsboro";
+        document.getElementById("b2").style.backgroundColor = "gainsboro";
+        document.getElementById("b3").style.backgroundColor = "gainsboro";
+        document.getElementById("b4").style.backgroundColor = "gainsboro";
+        rowB = [];
+    }
+
+    if (played < 12 && played > 8) {
+        played = 8;
+        document.getElementById("c1").style.backgroundColor = "gainsboro";
+        document.getElementById("c2").style.backgroundColor = "gainsboro";
+        document.getElementById("c3").style.backgroundColor = "gainsboro";
+        document.getElementById("c4").style.backgroundColor = "gainsboro";
+        rowC = [];
+    }
+
+    if (played < 16 && played > 12) {
+        played = 12;
+        document.getElementById("d1").style.backgroundColor = "gainsboro";
+        document.getElementById("d2").style.backgroundColor = "gainsboro";
+        document.getElementById("d3").style.backgroundColor = "gainsboro";
+        document.getElementById("d4").style.backgroundColor = "gainsboro";
+        rowD = [];
+    }
+
+    if (played < 20 && played > 16) {
+        played = 16;
+        document.getElementById("e1").style.backgroundColor = "gainsboro";
+        document.getElementById("e2").style.backgroundColor = "gainsboro";
+        document.getElementById("e3").style.backgroundColor = "gainsboro";
+        document.getElementById("e4").style.backgroundColor = "gainsboro";
+        rowE = [];
+    }
+
+    if (played < 24 && played > 20) {
+        played = 20;
+        document.getElementById("f1").style.backgroundColor = "gainsboro";
+        document.getElementById("f2").style.backgroundColor = "gainsboro";
+        document.getElementById("f3").style.backgroundColor = "gainsboro";
+        document.getElementById("f4").style.backgroundColor = "gainsboro";
+        rowF = [];
+    }
+
+}
+
+function playAgain() {
+   
+        played = 0;
+
+        document.getElementById("a1").style.backgroundColor = "gainsboro";
+        document.getElementById("a2").style.backgroundColor = "gainsboro";
+        document.getElementById("a3").style.backgroundColor = "gainsboro";
+        document.getElementById("a4").style.backgroundColor = "gainsboro";
+        rowA = [];
+        document.getElementById("b1").style.backgroundColor = "gainsboro";
+        document.getElementById("b2").style.backgroundColor = "gainsboro";
+        document.getElementById("b3").style.backgroundColor = "gainsboro";
+        document.getElementById("b4").style.backgroundColor = "gainsboro";
+        rowB = [];
+        document.getElementById("c1").style.backgroundColor = "gainsboro";
+        document.getElementById("c2").style.backgroundColor = "gainsboro";
+        document.getElementById("c3").style.backgroundColor = "gainsboro";
+        document.getElementById("c4").style.backgroundColor = "gainsboro";
+        rowC = [];
+        document.getElementById("d1").style.backgroundColor = "gainsboro";
+        document.getElementById("d2").style.backgroundColor = "gainsboro";
+        document.getElementById("d3").style.backgroundColor = "gainsboro";
+        document.getElementById("d4").style.backgroundColor = "gainsboro";
+        rowD = [];
+        document.getElementById("e1").style.backgroundColor = "gainsboro";
+        document.getElementById("e2").style.backgroundColor = "gainsboro";
+        document.getElementById("e3").style.backgroundColor = "gainsboro";
+        document.getElementById("e4").style.backgroundColor = "gainsboro";
+        rowE = [];
+        document.getElementById("f1").style.backgroundColor = "gainsboro";
+        document.getElementById("f2").style.backgroundColor = "gainsboro";
+        document.getElementById("f3").style.backgroundColor = "gainsboro";
+        document.getElementById("f4").style.backgroundColor = "gainsboro";
+        rowF = [];
+
+        document.getElementById("a11").style.backgroundColor = "gainsboro";
+        document.getElementById("a22").style.backgroundColor = "gainsboro";
+        document.getElementById("a33").style.backgroundColor = "gainsboro";
+        document.getElementById("a44").style.backgroundColor = "gainsboro";
+        
+        document.getElementById("b11").style.backgroundColor = "gainsboro";
+        document.getElementById("b22").style.backgroundColor = "gainsboro";
+        document.getElementById("b33").style.backgroundColor = "gainsboro";
+        document.getElementById("b44").style.backgroundColor = "gainsboro";
+        
+        document.getElementById("c11").style.backgroundColor = "gainsboro";
+        document.getElementById("c22").style.backgroundColor = "gainsboro";
+        document.getElementById("c33").style.backgroundColor = "gainsboro";
+        document.getElementById("c44").style.backgroundColor = "gainsboro";
+       
+        document.getElementById("d11").style.backgroundColor = "gainsboro";
+        document.getElementById("d22").style.backgroundColor = "gainsboro";
+        document.getElementById("d33").style.backgroundColor = "gainsboro";
+        document.getElementById("d44").style.backgroundColor = "gainsboro";
+      
+        document.getElementById("e11").style.backgroundColor = "gainsboro";
+        document.getElementById("e22").style.backgroundColor = "gainsboro";
+        document.getElementById("e33").style.backgroundColor = "gainsboro";
+        document.getElementById("e44").style.backgroundColor = "gainsboro";
+       
+        document.getElementById("f11").style.backgroundColor = "gainsboro";
+        document.getElementById("f22").style.backgroundColor = "gainsboro";
+        document.getElementById("f33").style.backgroundColor = "gainsboro";
+        document.getElementById("f44").style.backgroundColor = "gainsboro";
+       
+        
+        result = []
+
+        for (var i = 0; i < 4; i++) {
+            test = Math.floor(Math.random() * 6);
+            test += 1;
+            result.push(test);
+        } 
+        
+        
+    }
 
