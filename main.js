@@ -147,7 +147,7 @@ function check() {
     if (played == 4) {
         for (var n = 0; n < correctAndIncorrect; n++) {
             var id = "a" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#999";
+            document.getElementById(id).style.backgroundColor = "#666";
         }
 
         for (var n = 0; n < correct; n++) {
@@ -159,7 +159,7 @@ function check() {
     if (played == 8) {
         for (var n = 0; n < correctAndIncorrect; n++) {
             var id = "b" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#999";
+            document.getElementById(id).style.backgroundColor = "#666";
         }
 
         for (var n = 0; n < correct; n++) {
@@ -171,7 +171,7 @@ function check() {
     if (played == 12) {
         for (var n = 0; n < correctAndIncorrect; n++) {
             var id = "c" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#999";
+            document.getElementById(id).style.backgroundColor = "#666";
         }
 
         for (var n = 0; n < correct; n++) {
@@ -183,7 +183,7 @@ function check() {
     if (played == 16) {
         for (var n = 0; n < correctAndIncorrect; n++) {
             var id = "d" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#999";
+            document.getElementById(id).style.backgroundColor = "#666";
         }
 
         for (var n = 0; n < correct; n++) {
@@ -195,7 +195,7 @@ function check() {
     if (played == 20) {
         for (var n = 0; n < correctAndIncorrect; n++) {
             var id = "e" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#999";
+            document.getElementById(id).style.backgroundColor = "#666";
         }
 
         for (var n = 0; n < correct; n++) {
@@ -222,10 +222,6 @@ function check() {
         lose();
     }
 }
-
-
-
-
 
 
 
