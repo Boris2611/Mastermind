@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(216, 216, 216);
+}
+
+.dugme {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#a {
+    background-color: red;
+}
+
+#b {
+    background-color: green;
+}
+
+#c {
+    background-color: blue;
+}
+
+#d {
+    background-color: yellow;
+}
+
+#e {
+    background-color: orange;
+}
+
+#f {
+    background-color: purple;
+}
+
+
+
+.tabla {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: wheat;
+    width: 550px;
+    border-radius: 20px;
+}
+
+
+.empty {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+}
+
+
+
+#a11, #a1, #b1, #b11, #c11, #c1, #c1, #c11,
+#d1, #d11, #e1, #e11, #f1, #f11 {
+    margin-left: 50px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .empty {
+        width: 8px;
+        height: 8px;
+        padding: 10px;
+    }
+
+    .tabla {
+        padding: 5px;
+        width: 95%;
+    }
+
+    #a11, #a1, #b1, #b11, #c11, #c1, #c1, #c11,
+    #d1, #d11, #e1, #e11, #f1, #f11 {
+    margin-left: 10px;
+}
+
+    .dugme {
+        margin: 2px;
+        padding: 10px;
+    }
+  }
