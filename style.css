@@ -103,6 +103,15 @@ button {
     box-shadow: 0px 0px 5px 5px #444;
 }
 
+#winText {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
 @media only screen and (max-width: 800px) {
     .empty {
         width: 10px;

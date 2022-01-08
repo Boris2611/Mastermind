@@ -132,6 +132,7 @@ function check() {
                 if (correct == 4) {
                     final();
                     winsound.play();
+                    document.getElementById("winText").style.visibility = "visible";
                 }
             }
 
@@ -382,6 +383,8 @@ function returnMove() {
 function playAgain() {
    
         played = 0;
+
+        document.getElementById("winText").style.visibility = "hidden";
 
         document.getElementById("a1").style.backgroundColor = "gainsboro";
         document.getElementById("a2").style.backgroundColor = "gainsboro";
