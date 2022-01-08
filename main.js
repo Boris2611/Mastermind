@@ -124,7 +124,7 @@ function check() {
             if(row[i] == result[i]){
                 correct += 1;
                 if (correct == 4) {
-                    win();
+                    final();
                 }
             }
 
@@ -219,19 +219,93 @@ function check() {
 
 
     if (played == 24) {
-        lose();
+        final();
     }
 }
 
 
 
-function win() {
-    alert("You Won!")
-}
 
-function lose() {
-   
-}
+
+function final() {
+    // Displaying The Answer
+    
+    if (result[0] == 1) {
+        document.getElementById("an1").style.backgroundColor = "red";
+    }
+    else if (result[0] == 2) {
+        document.getElementById("an1").style.backgroundColor = "green";
+    }
+    else if (result[0] == 3) {
+        document.getElementById("an1").style.backgroundColor = "blue";
+    }
+    else if (result[0] == 4) {
+        document.getElementById("an1").style.backgroundColor = "yellow";
+    }
+    else if (result[0] == 5) {
+        document.getElementById("an1").style.backgroundColor = "orange";
+    }
+    else if (result[0] == 6) {
+        document.getElementById("an1").style.backgroundColor = "purple";
+    }
+
+    if (result[1] == 1) {
+        document.getElementById("an2").style.backgroundColor = "red";
+    }
+    else if (result[1] == 2) {
+        document.getElementById("an2").style.backgroundColor = "green";
+    }
+    else if (result[1] == 3) {
+        document.getElementById("an2").style.backgroundColor = "blue";
+    }
+    else if (result[1] == 4) {
+        document.getElementById("an2").style.backgroundColor = "yellow";
+    }
+    else if (result[1] == 5) {
+        document.getElementById("an2").style.backgroundColor = "orange";
+    }
+    else if (result[1] == 6) {
+        document.getElementById("an2").style.backgroundColor = "purple";
+    }
+
+    if (result[2] == 1) {
+        document.getElementById("an3").style.backgroundColor = "red";
+    }
+    else if (result[2] == 2) {
+        document.getElementById("an3").style.backgroundColor = "green";
+    }
+    else if (result[2] == 3) {
+        document.getElementById("an3").style.backgroundColor = "blue";
+    }
+    else if (result[2] == 4) {
+        document.getElementById("an3").style.backgroundColor = "yellow";
+    }
+    else if (result[2] == 5) {
+        document.getElementById("an3").style.backgroundColor = "orange";
+    }
+    else if (result[2] == 6) {
+        document.getElementById("an3").style.backgroundColor = "purple";
+    }
+
+    if (result[3] == 1) {
+        document.getElementById("an4").style.backgroundColor = "red";
+    }
+    else if (result[3] == 2) {
+        document.getElementById("an4").style.backgroundColor = "green";
+    }
+    else if (result[3] == 3) {
+        document.getElementById("an4").style.backgroundColor = "blue";
+    }
+    else if (result[3] == 4) {
+        document.getElementById("an4").style.backgroundColor = "yellow";
+    }
+    else if (result[3] == 5) {
+        document.getElementById("an4").style.backgroundColor = "orange";
+    }
+    else if (result[3] == 6) {
+        document.getElementById("an4").style.backgroundColor = "purple";
+    }
+ }
 
 
 function returnMove() {
@@ -355,6 +429,11 @@ function playAgain() {
         document.getElementById("f22").style.backgroundColor = "gainsboro";
         document.getElementById("f33").style.backgroundColor = "gainsboro";
         document.getElementById("f44").style.backgroundColor = "gainsboro";
+
+        document.getElementById("an1").style.backgroundColor = "gainsboro";
+        document.getElementById("an2").style.backgroundColor = "gainsboro";
+        document.getElementById("an3").style.backgroundColor = "gainsboro";
+        document.getElementById("an4").style.backgroundColor = "gainsboro";
        
         
         result = []

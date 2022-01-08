@@ -68,7 +68,7 @@ body {
 .center {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    
 }
 
 
@@ -77,6 +77,11 @@ button {
     margin: 20px;
     padding: 10px;
     float: right;
+}
+
+#an1, #an2, #an3, #an4 {
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 
