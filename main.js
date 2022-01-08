@@ -22,7 +22,7 @@ var test;
 var result = []
 
 for (var i = 0; i < 4; i++) {
-    test = Math.floor(Math.random() * 3);
+    test = Math.floor(Math.random() * 5);
     test += 1;
     result.push(test);
 } 
@@ -207,7 +207,7 @@ function check() {
     if (played == 24) {
         for (var n = 0; n < correctAndIncorrect; n++) {
             var id = "f" + parseInt(n + 1) + parseInt(n + 1);
-            document.getElementById(id).style.backgroundColor = "#999";
+            document.getElementById(id).style.backgroundColor = "#666";
         }
 
         for (var n = 0; n < correct; n++) {
